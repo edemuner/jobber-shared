@@ -97,5 +97,10 @@ export {
     NotFoundError,
     NotAuthorizedError,
     FileTooLargeError,
-    ServerError
+    ServerError,
+    ErrnoException
 } from './error-handler';
+
+export {
+    verifyGatewayRequest
+} from './gateway-middleware';
