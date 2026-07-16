@@ -88,3 +88,14 @@ export {
     upload,
     videoUpload,
 } from './cloudinary-upload';
+
+export {
+    IErrorResponse,
+    IError,
+    CustomError,
+    BadRequestError,
+    NotFoundError,
+    NotAuthorizedError,
+    FileTooLargeError,
+    ServerError
+} from './error-handler';
