@@ -10,6 +10,8 @@ jobs:
     permissions:
       contents: read
       packages: write
+    env:
+      NPM_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v3
@@ -22,5 +24,3 @@ jobs:
           echo //npm.pkg.github.com/:_authToken=${NPM_TOKEN} >> build/.npmrc
       - run: npm publish
         working-directory: ./build
-        env:
-          NPM_TOKEN: ${{ secrets.GITHUB_TOKEN }}
