@@ -1,3 +1,5 @@
+import { winstonLogger } from './logger';
+
 export {
     IAuthPayload,
     IAuth,
@@ -104,3 +106,5 @@ export {
 export {
     verifyGatewayRequest
 } from './gateway-middleware';
+
+export { winstonLogger } from './logger';
