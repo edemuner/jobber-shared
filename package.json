@@ -29,6 +29,7 @@
   },
   "exports": {
     ".": {
+      "types": "./src/index.d.ts",
       "import": "./esm/index.js",
       "require": "./cjs/index.js"
     },
